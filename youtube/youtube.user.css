@@ -5,7 +5,7 @@
 @description    Compact YouTube grids, watch history, and full-height theater mode.
 @author         Danilo Nery
 @homepageURL    https://github.com/dnery/yt-usercss
-@updateURL      https://raw.githubusercontent.com/dnery/yt-usercss/main/youtube.user.css
+@updateURL      https://raw.githubusercontent.com/dnery/usercss/main/youtube/youtube.user.css
 @preprocessor   default
 @var range      gridColumns         "Videos per row"                       [4, 3, 6, 1]
 @var range      historyShortsWidth  "History Shorts width"                 [120, 90, 180, 10, "px"]
