@@ -1,11 +1,13 @@
 /* ==UserStyle==
-@name           Danilo's Youtube
+@name           Danilo's Youtube Tweaks
 @namespace      dznery.com
-@version        0.4.0
+@version        0.5.0
 @description    Compact YouTube grids, watch history, and full-height theater mode.
 @author         Danilo Nery
-@homepageURL    https://github.com/dnery/yt-usercss
+@homepageURL    https://github.com/dnery/usercss/tree/main/youtube
+@supportURL     https://github.com/dnery/usercss/issues
 @updateURL      https://raw.githubusercontent.com/dnery/usercss/main/youtube/youtube.user.css
+@license        MIT
 @preprocessor   default
 @var range      gridColumns         "Videos per row"                       [4, 3, 6, 1]
 @var range      historyShortsWidth  "History Shorts width"                 [120, 90, 180, 10, "px"]
@@ -59,10 +61,7 @@
   /* Keep menu buttons in their card instead of using fixed offsets. */
   ytd-browse
     ytd-rich-item-renderer
-    :is(
-      .ytLockupMetadataViewModelMenuButton,
-      .yt-lockup-metadata-view-model__menu-button
-    ) {
+    :is(.ytLockupMetadataViewModelMenuButton, .yt-lockup-metadata-view-model__menu-button) {
     flex-shrink: 0;
   }
 }
@@ -74,10 +73,7 @@
   }
 
   ytd-watch-flexy
-    :is(
-      .ytContentMetadataViewModelMetadataRow,
-      .yt-content-metadata-view-model__metadata-row
-    ) {
+    :is(.ytContentMetadataViewModelMetadataRow, .yt-content-metadata-view-model__metadata-row) {
     margin-top: 0 !important;
   }
 
@@ -102,9 +98,7 @@
   }
 
   /* YouTube sets video dimensions inline. Fit the video to the player. */
-  ytd-watch-flexy[theater]:not([fullscreen])
-    #player-full-bleed-container
-    video.html5-main-video {
+  ytd-watch-flexy[theater]:not([fullscreen]) #player-full-bleed-container video.html5-main-video {
     width: 100% !important;
     height: 100% !important;
     top: 0 !important;
@@ -145,8 +139,7 @@
     overflow: visible !important;
   }
 
-  ytd-two-column-browse-results-renderer[page-subtype="history"]
-    ytd-browse-feed-actions-renderer {
+  ytd-two-column-browse-results-renderer[page-subtype="history"] ytd-browse-feed-actions-renderer {
     box-sizing: border-box;
     width: 100% !important;
     padding: 0 !important;
@@ -169,9 +162,7 @@
     --ytd-reel-item-width: var(--historyShortsWidth, 120px) !important;
   }
 
-  ytd-browse[page-subtype="history"]
-    ytd-reel-shelf-renderer
-    ytm-shorts-lockup-view-model-v2 {
+  ytd-browse[page-subtype="history"] ytd-reel-shelf-renderer ytm-shorts-lockup-view-model-v2 {
     width: calc(var(--historyShortsWidth, 120px) + 8px) !important;
     min-width: 0 !important;
   }
@@ -195,10 +186,7 @@
   }
 
   ytd-browse[page-subtype="history"]
-    :is(
-      .ytContentMetadataViewModelMetadataRow,
-      .yt-content-metadata-view-model__metadata-row
-    ) {
+    :is(.ytContentMetadataViewModelMetadataRow, .yt-content-metadata-view-model__metadata-row) {
     margin-top: 0 !important;
     padding-block: 0 !important;
   }

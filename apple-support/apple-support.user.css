@@ -1,18 +1,17 @@
 /* ==UserStyle==
-@name           Apple Support Dark
-@namespace      github.com/dnery/stylus-theme-apple-support
-@version        0.1.0
+@name           Danilo's Apple Support Dark
+@namespace      dznery.com
+@version        0.2.0
 @description    A careful dark theme for Apple Support articles and Apple guide pages.
 @author         Danilo Nery
-@homepageURL    https://github.com/dnery/stylus-theme-apple-support
-@supportURL     https://github.com/dnery/stylus-theme-apple-support/issues
-@updateURL      https://raw.githubusercontent.com/dnery/stylus-theme-apple-support/main/apple-support-dark.user.css
+@homepageURL    https://github.com/dnery/usercss/tree/main/apple-support
+@supportURL     https://github.com/dnery/usercss/issues
+@updateURL      https://raw.githubusercontent.com/dnery/apple-support/main/apple-support.user.css
 @license        MIT
 @preprocessor   default
 ==/UserStyle== */
 
-@-moz-document
-  regexp("^https://support\\.apple\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?(?:guide|kb)/.*"),
+@-moz-document regexp("^https://support\\.apple\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?(?:guide|kb)/.*"),
   regexp("^https://support\\.apple\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?(?:[A-Za-z]{2}\\d{6}|\\d{6})(?:[/?#].*)?$") {
   :root {
     --asd-bg: #08090b;
