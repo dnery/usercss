@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Danilo's Youtube Tweaks
 @namespace      dznery.com
-@version        0.5.1
+@version        0.5.2
 @description    Compact YouTube grids, watch history, and full-height theater mode.
 @author         Danilo Nery
 @homepageURL    https://github.com/dnery/usercss/tree/main/youtube
@@ -180,7 +180,7 @@
       .ytLockupViewModelHorizontal > .ytLockupViewModelContentImage,
       ytd-video-renderer ytd-thumbnail
     ) {
-    width: 154px !important;
+    width: 156px !important;
     min-width: 154px !important;
     flex-shrink: 0 !important;
   }
